@@ -6,11 +6,14 @@ include RSpec::Expectations
 describe "AWSRubyTest" do
 
   before(:each) do
+    caps = Selenium::WebDriver::Remote::Capabilities.new
+    caps["browser"] = "IE"
     @driver = Selenium::WebDriver.for(
         :remote,
-        :url => "http://localhost:4444/wd/hub",
-        :desired_capabilities => :firefox
+        :url => "http://54.69.157.255:4444/wd/hub",
+        :desired_capabilities => caps
     )
+
 
     @base_url = "http://www.wikipedia.org/"
     @accept_next_alert = true
