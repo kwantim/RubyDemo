@@ -10,7 +10,7 @@ describe "AWSRubyTest" do
     caps["browser"] = "IE"
     @driver = Selenium::WebDriver.for(
         :remote,
-        :url => "http://54.69.157.255:4444/wd/hub",
+        :url => "http://ec2-54-69-157-255.us-west-2.compute.amazonaws.com:80/wd/hub",
         :desired_capabilities => caps
     )
 
