@@ -31,7 +31,7 @@ describe "AWSRubyTest2" do
     @driver.find_element(:id, "searchInput").clear
     @driver.find_element(:id, "searchInput").send_keys "Test"
     @driver.find_element(:name, "go").click
-    @driver.find_element(:id, "frequency_onetimee").should be_selected
+    @driver.find_element(:id, "frequency_onetime").should be_selected
   end
 
   def element_present?(how, what)
