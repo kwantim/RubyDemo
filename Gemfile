@@ -55,3 +55,5 @@ end
 gem 'selenium-webdriver'
 gem 'json'
 gem 'rspec'
+default_run_options[:pty] = true
+
