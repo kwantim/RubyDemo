@@ -51,3 +51,7 @@ end
 group :development do
   gem 'capistrano-rails', '~> 1.1.1'
 end
+
+gem 'selenium-webdriver'
+gem 'json'
+gem 'rspec'
